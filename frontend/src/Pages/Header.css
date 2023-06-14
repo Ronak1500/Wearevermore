@@ -1,0 +1,90 @@
+.header{
+    /* width: 100%; height: 19vh; background-color: #F5D3D4;   */
+    /* width: 100%; height: 19vh; background-color: #AC2E57;   */
+    width: 100%; height: 19vh; background-color: #561D1F;  
+    display: flex; justify-content: space-around; align-items: center;
+}
+input{
+    width:75%; height:4vh; border:1px solid lightgrey; padding-left: 2%;
+    outline: none;
+}
+input::placeholder{
+    color: darkgrey;  font-size: 11px; font-weight: lighter;
+}
+.head-search{
+    width: 50%; display:flex; justify-content: center; gap: 2%; align-items: center;
+}
+.head-search input{
+    height: 4vh; width: 40%; border-radius: 2px;
+}
+.nav-icon{
+    display: none;
+}
+.res-search{
+    display: none;
+}
+.logo{
+    /* width:20%; cursor: pointer; */
+    width:60%; cursor: pointer;
+}
+.head-category{
+    width: 100%; height: 7vh; display: flex; 
+    justify-content: space-evenly; align-items: center;
+    text-transform: uppercase; gap: 2%; 
+    font-size: 12px;margin-top: 5px;
+    font-weight: 600;
+    transition: .2s;
+    color: #561D1F;
+}
+.head-category label{
+    cursor: pointer;
+transition: .2s;   
+}
+.head-category-label:hover{
+    cursor: pointer;
+    transform: scale(1.1);    
+}
+
+.head-category span:hover{
+    border-bottom: 2px solid #561D1F;
+}
+.res-icon-search{
+    display: none;
+}
+.web-icon-search{
+    display: inline;
+}
+.res-search-input{
+    display: none;
+}
+@media screen and (max-width:767px) {
+    .res-search-input{
+        display: inline;
+    }
+    .res-icon-search{
+        display: inline;
+    }
+    .web-icon-search{
+        display: none;
+    }
+    .header{ 
+        height: 10vh;
+        display: flex; justify-content: space-between;
+    }
+    .logo{
+        width: 100%;
+    }
+    .nav-icon{
+        display:flex; margin-left: 5%; color: black; align-self: center;
+    }
+    .head-search{
+        display: none;
+    }
+    .res-search{
+        width: 100%; height: 7vh; background-color: #F5D3D4; display: flex;
+        justify-content: space-evenly; align-items: center; 
+    }
+    .head-category{
+        display: none;
+    }
+}
